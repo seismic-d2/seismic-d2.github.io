@@ -1,0 +1,227 @@
+html {
+  background: #232323;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 12pt;
+  color: #eee;
+}
+
+body {
+  /*background: #333333;*/
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* --------------- */
+
+.mainpage {
+  width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: default;
+}
+
+/* --------------- */
+
+.page-description {
+  color: #aaa;
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* --------------- */
+
+.part-header {
+  display: grid;
+  grid-template-rows: 0rem 2rem minmax(min-content, max-content) minmax(min-content, max-content);
+  row-gap: 0.2rem;
+  grid-template-areas: 
+  "image"
+  "caption"
+  "pills"
+  "description";
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+.part-header-image {
+  grid-area: image;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.part-header-caption {
+  grid-area: caption;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.part-header-pills {
+  grid-area: pills;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.part-header-pill {
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  padding-bottom: 0.1rem;
+  padding-top: 0.1rem;
+  background-color: #196dcb;
+  color: #fff;
+}
+
+.part-header-description {
+  grid-area: description;
+  margin-top: 0.2rem;
+  color: #aaa;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/* --------------- */
+
+.gearitem-grid {
+  display: grid;
+  height: 4rem;
+  column-gap: 1rem;
+  grid-template-columns: 3rem 3rem 3rem 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "icon1 icon2 icon3 caption"
+  "icon1 icon2 icon3 description";
+}
+
+.gearitem-icon1 {
+  grid-area: icon1;
+  margin: auto;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5em;
+  border: solid 1px #000;
+}
+.gearitem-icon2 {
+  grid-area: icon2;
+  margin: auto;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5em;
+  border: solid 1px #000;
+}
+.gearitem-icon3 {
+  grid-area: icon3;
+  margin: auto;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5em;
+  border: solid 1px #000;
+}
+
+.gearitem-captionflex {
+  grid-area: caption;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.gearitem-caption {
+  margin-top: auto;
+  margin-bottom: 0.1rem;
+  font-weight: 700;
+}
+
+.gearitem-pill {
+  border-radius: 0.4rem;
+  margin-top: auto;
+  margin-bottom: 0.1rem;
+  font-size: 0.8rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+  padding-bottom: 0.1rem;
+  padding-top: 0.1rem;
+  background-color: #196dcb;
+  color: #fff;
+}
+
+
+.gearitem-description {
+  grid-area: description;
+  margin-top: 0.1rem;
+  margin-bottom: auto;
+  color: #aaa;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/* --------------- */
+
+.bg-red { background-color: #cc1818; }
+.bg-orange { background-color: #cc5918; }
+.bg-blue { background-color: #196dcb; }
+.bg-green { background-color: #33911d; }
+.bg-gray { background-color: #444444; }
+
+.text-green { color: #5ce05e; }
+.text-violet { color: #de5ce0; }
+
+/* --------------- */
+
+@media (orientation: portrait) {
+  
+  html {
+    font-size: 4vw;
+  }
+  
+  .mainpage {
+    width: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .gearitem-grid {
+    display: grid;
+    column-gap: 1rem;
+    height: auto;
+    margin-bottom: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: minmax(min-content, max-content) minmax(min-content, max-content) 5rem;
+    grid-template-areas: 
+    "caption caption caption"
+    "description description description"
+    "icon1 icon2 icon3";
+  }
+  
+  .gearitem-icon1 {
+    width: 4rem;
+    height: 4rem;
+  }
+  .gearitem-icon2 {
+    width: 4rem;
+    height: 4rem;
+  }
+  .gearitem-icon3 {
+    width: 4rem;
+    height: 4rem;
+  }
+}
