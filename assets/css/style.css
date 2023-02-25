@@ -1,6 +1,6 @@
 html {
   background-color: #2F343F;
-  background-image: url("./assets/img/topo-pattern-5.png");
+  background-image: url("../img/topo-pattern-5.png");
   background-size: 524px 515px;
   font-family: 'Atkinson Hyperlegible', sans-serif;
   font-size: 14pt;
@@ -17,11 +17,16 @@ body {
 
 main {
   position: relative;
-  max-width: 60rem;
+  max-width: 42rem;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+h1 {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 700;
 }
 
 h2 {
@@ -87,4 +92,39 @@ img {
 }
 
 
+
+
+header {
+  position: relative;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+.header-container {
+  display: grid;
+  grid-template-columns: 10rem 1fr 2rem 2rem 2rem 2rem;
+  align-items: center;
+  height: 3rem;
+  margin-bottom: 4rem;
+}
+
+.header-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: auto;
+  border: none;
+  filter:drop-shadow(0px 0px 4px #0008);
+}
+
+.header-homelink {
+  color: #eee;
+  text-decoration: none;
+}
+.header-homelink:hover {
+  color: #58a6ff;
+}
 
