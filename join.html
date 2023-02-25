@@ -18,7 +18,7 @@
   <body>
     
     <div class="landing-title-bgimage"></div>
-    <div class="landing-title-gradient"></div>
+    <!-- <div class="landing-title-gradient"></div> -->
     
     <main>
 
@@ -66,20 +66,24 @@
       <p class="section-text">1. We only accept 18yo or older members</p>
       <p class="section-text">2. Everyone is asked to have at least 30 minutes of voice activity every two weeks. Needless to say, we all have our own lives and plans, so breaks are totally allowed, given that admins are aware of them</p>
       <p class="section-text">3. Any disrespect to other people will not be tolerated</p>
-      <p class="section-text">4. Discord is our main and pretty much only mean of clan communications</p>
+      <p class="section-text">4. Discord is our main and pretty much only mean of clan comms</p>
 
       <div style="height: 2rem;"></div>
 
       <p class="join-notice-line"><span class="yellow">Important</span>: our application form is a bit out of date.</p>
       <p class="join-notice-line">Please make sure to select PC as your platform regardless of your actual platform</p>
+      
+      <!-- <div style="height: 1rem;"></div>
+      <p class="join-notice-line"><span class="yellow">Important 2</span>: if you have a PC, please join from desktop</p>
+      <p class="join-notice-line">Discord has a problem syncing profiles from mobile platforms</p> -->
 
       <div style="height: 1rem;"></div>
-      <div class="join-button"> 
+      <a class="join-button" href="https://seismicgaming.eu/join" target="_blank"> 
         <div class="glowbox"></div>
         <div class="glowbox2"></div>
         <div class="join-button-bg"></div>
         <div class="join-button-text">Join with Discord</div>
-      </div>
+      </a>
 
       <div style="height: 2rem;"></div>
 
@@ -88,25 +92,36 @@
       <div style="height: 8rem;"></div>
       <div class="section-header">More about us</div>
 
-      <p class="section-text">Our main inspiration is the teamwork that is only possible in Destiny, and we like to challenge ourselves as well as help more people explore those raids, dungeons, GMs to create more of passionate guardians like us. Some amount of sweat is involved at times, but I think that any sane person is more than able to enjoy those things.</p>
-      <p class="section-text">The second important part is having a community of active people to play, talk, and have general fun with instead of your average come-and-go LFG experience. We think it’s more fun to interact with the same friendly people more often, create more memorable experiences, go for advanced challenges with trusty comrades and just fool around without stressing it.</p>
+      <p class="section-text">Our main inspiration is the <span class="red">teamwork</span> that is only possible in Destiny, and we like to challenge ourselves as well as help more people explore those raids, dungeons, GMs to create more of passionate guardians like us. Some amount of sweat is involved at times, but I think that any sane person is more than able to enjoy those things.</p>
+      <p class="section-text">The second important part is having a <span class="red">community of active people</span> to play, talk, and have general fun with instead of your average come-and-go LFG experience. We think it’s more fun to interact with the same friendly people more often, create more memorable experiences, go for advanced challenges with trusty comrades and just fool around without stressing it.</p>
 
       <div style="height: 2rem;"></div>
       <div class="emblems-container">
-        <img src="./assets/img/joinpage-emblem-sgj.png" class="emblems-img" style="grid-column: 1;">
-        <div class="emblems-caption" style="grid-column: 1;">SGJ</div>
-        <div class="emblems-subcaption" style="grid-column: 1;">Juggernauts</div>
+        <a class="emblem-item" style="grid-column: 1;" href="https://www.bungie.net/en/ClanV2?groupId=3285991" target="_blank">
+          <img src="./assets/img/joinpage-emblem-sgj.png" class="emblems-img">
+          <div class="emblems-caption">SGJ</div>
+          <div class="emblems-subcaption">Juggernauts</div>
+        </a>
         <!-- -->
-        <img src="./assets/img/joinpage-emblem-sgp.png" class="emblems-img" style="grid-column: 3;">
-        <div class="emblems-caption" style="grid-column: 3;">SGP</div>
-        <div class="emblems-subcaption" style="grid-column: 3;">Pathfinders</div>
+        <a class="emblem-item" style="grid-column: 3;" href="https://www.bungie.net/en/ClanV2?groupId=3909446" target="_blank">
+          <img src="./assets/img/joinpage-emblem-sgp.png" class="emblems-img">
+          <div class="emblems-caption">SGP</div>
+          <div class="emblems-subcaption">Pathfinders</div>
+        </a>
+        
       </div>
 
       <div style="height: 2rem;"></div>
-      <p class="section-text">Seismic Destiny 2 is a fairly independent, but integral part of large community called Seismic Gaming, our main website is seismicgaming.eu. There are many more awesome people playing different games and just having good time together and you are free to interact and play with them as well if you wish to do so.</p>
+      <p class="section-text">Seismic Destiny 2 is a fairly independent, but integral part of large community called Seismic Gaming, our main website is <a href="https://seismicgaming.eu">seismicgaming.eu</a>. There are many more awesome people playing different games and just having good time together and you are free to interact and play with them as well if you wish to do so.</p>
       <p class="section-text">Destiny 2 division has a population of around 100-150 players and is split into two subclans (clans in D2 can only have 100 members or less): Seismic Juggernauts for EU timezones and Seismic Pathfinders for NA timezones.</p>
       
-      <div style="height: 16rem"></div>
+      <div style="height: 2rem;"></div>
+      <div class="section-header">Additional links</div>
+      <p class="section-text">Our main community website: <a href="https://seismicgaming.eu">seismicgaming.eu</a></p>
+      <p class="section-text">Seismic Destiny 2 web resource: <a href="https://seismic-d2.github.io">seismic-d2.github.io</a></p>
+      <p class="section-text">Join clan: <a href="https://seismicgaming.eu/join">seismicgaming.eu/join</a></p>
+      
+      <div style="height: 4rem"></div>
       
 
     </main>
@@ -131,7 +146,7 @@
     
     html {
       background-color: #1D2023;
-      
+      background-image: url("./assets/img/topo-pattern-5d.jpg");
       font-family: 'Atkinson Hyperlegible', sans-serif;
       font-size: 14pt;
       letter-spacing: .026rem;
@@ -192,6 +207,10 @@
       margin-top: 0.2rem;
       margin-bottom: 0;
       line-height: 1rem;
+    }
+    
+    a {
+      color: #58a6ff;
     }
 
 
