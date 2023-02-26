@@ -1,10 +1,9 @@
 html {
   background-color: #2F343F;
-  background-image: url("../img/topo-pattern-5.png");
-  background-size: 524px 515px;
+  background-image: url("../img/topo-pattern-5d2.png");
   font-family: 'Atkinson Hyperlegible', sans-serif;
   font-size: 14pt;
-  letter-spacing: .026rem;
+  letter-spacing: .030rem;
   color: #eee;
   font-smooth: subpixel-antialiased;
 }
