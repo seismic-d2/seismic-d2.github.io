@@ -69,7 +69,7 @@ li {
 img {
   object-fit: contain;
   max-width: 100%;
-  border: solid 1px #000b;
+  border: solid 0px #000b;
   border-radius: 0.5rem;
 }
 
